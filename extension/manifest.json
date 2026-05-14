@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "PhishGuard — URL Checker",
+  "version": "1.0",
+  "description": "Real-time phishing URL detection",
+  "permissions": ["tabs", "webNavigation", "storage", "notifications"],
+  "host_permissions": ["<all_urls>"],
+  "background": { "service_worker": "background.js" },
+  "content_scripts": [{ "matches": ["<all_urls>"], "js": ["content.js"] }],
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": { "16": "icons/icon16.png", "48": "icons/icon48.png" }
+  }
+}

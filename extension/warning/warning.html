@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Phishing Warning — PhishGuard</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: system-ui; background: #0d0000; color: #fff;
+           display: flex; align-items: center; justify-content: center;
+           min-height: 100vh; margin: 0; padding: 2rem; }
+    .card { background: #1a0505; border: 1px solid #c0392b; border-radius: 12px;
+            max-width: 600px; width: 100%; padding: 2.5rem; text-align: center; }
+    h1 { color: #e74c3c; font-size: 1.8rem; margin: 0.5rem 0; }
+    .icon { font-size: 3.5rem; margin-bottom: 0.5rem; }
+    .url-box { background: #0d0000; border: 1px solid #7b1a1a; border-radius: 6px;
+               padding: 0.75rem; margin: 1rem 0; word-break: break-all;
+               font-size: 0.85rem; color: #e0a0a0; font-family: monospace; }
+    .reason { background: #2d0808; border-left: 3px solid #e74c3c; padding: 0.5rem 1rem;
+              margin: 0.4rem 0; border-radius: 0 6px 6px 0; text-align: left; font-size: 0.9rem; }
+    .reasons-title { text-align: left; color: #ccc; font-size: 0.9rem; margin: 1rem 0 0.4rem; font-weight: 600; }
+    .btn-back { background: #e74c3c; color: #fff; border: none; padding: 0.8rem 2.5rem;
+                border-radius: 8px; cursor: pointer; font-size: 1rem; margin-top: 1.5rem;
+                font-weight: 600; }
+    .btn-proceed { display: block; background: transparent; color: #666; border: 1px solid #444;
+                   padding: 0.5rem 1rem; border-radius: 8px; cursor: pointer;
+                   font-size: 0.8rem; margin: 0.75rem auto 0; }
+    .btn-back:hover { background: #c0392b; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="icon">⛔</div>
+    <h1>Phishing Threat Detected</h1>
+    <p style="color:#aaa; margin: 0.25rem 0 1rem">PhishGuard blocked this page for your safety.</p>
+    <div class="url-box" id="blocked-url"></div>
+    <div class="reasons-title">Why this was blocked:</div>
+    <div id="reasons-list"></div>
+    <button class="btn-back" onclick="history.back()">← Go back to safety</button>
+    <button class="btn-proceed" id="proceed-btn">I understand the risks — proceed anyway</button>
+  </div>
+  <script src="warning.js"></script>
+</body>
+</html>
