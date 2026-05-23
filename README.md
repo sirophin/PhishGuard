@@ -1,54 +1,65 @@
-# PhishGuard — Real-Time Phishing Detection & Awareness Platform
+# 🛡️ PhishGuard — Real-Time Phishing Detection Platform
 
-A final-year cybersecurity project built with React, Node.js, Express, and MongoDB.
+PhishGuard is a cybersecurity project that detects phishing attacks in real time using rule-based analysis and threat intelligence APIs.
 
-## Features
+## 🚀 Features
 
-### Module 1 — Detection
-- URL Scanner with rule-based heuristics (IP detection, homograph attacks, lookalike domains)
-- VirusTotal API integration
-- OpenPhish feed integration
-- File Extension Checker (double extension attacks, dangerous file types)
-- Email Header Analyzer (SPF, DKIM, DMARC, spoofing detection)
-- Chrome Extension with real-time blocking
-- Scan logs with CSV export
+* 🔍 Phishing URL Detection
+* 📧 Email Header Analysis
+* 🛑 Dangerous File Detection
+* 🌐 OpenPhish & VirusTotal Integration
+* 📊 Dashboard & Scan Logs
+* 🧠 Security Awareness Quiz
+* 🧩 Chrome Extension Protection
 
-### Module 2 — Awareness
-- Phishing quiz with 7 questions across 3 difficulty levels
-- Security awareness guide
-- Email header analysis education
+## 🛠️ Tech Stack
 
-## Tech Stack
-- Frontend: React.js + Vite
-- Backend: Node.js + Express
-- Database: MongoDB
-- Extension: Chrome Manifest V3
-- APIs: VirusTotal, OpenPhish
+* React.js
+* Node.js & Express.js
+* MongoDB
+* Chrome Extension (Manifest V3)
+* VirusTotal API
+* OpenPhish Feed
 
-## Setup
+## ⚡ Installation
 
-### Prerequisites
-- Node.js v18+
-- MongoDB running locally
-
-### Install & Run
 ```bash
-# Backend
-cd backend && npm install
-cp .env.example .env   # add your API keys
-npm run dev
-
-# Frontend
-cd frontend && npm install
+git clone https://github.com/yourusername/PhishGuard.git
+cd PhishGuard
+npm install
 npm run dev
 ```
 
-Open http://localhost:5173
+## 📌 Project Goal
 
-### Chrome Extension
-1. Open chrome://extensions
-2. Enable Developer mode
-3. Click "Load unpacked"
-4. Select the /extension folder
+To help users identify phishing websites, malicious files, and suspicious emails before they become victims of cyber attacks.
 
-## Environment Variables
+## 📷 Screenshots 
+
+<img width="1920" height="929" alt="Screenshot From 2026-05-23 21-56-00" src="https://github.com/user-attachments/assets/fb5e5481-8f08-4f2e-ac3f-e6b4bb98ef83" />
+
+<img width="1920" height="929" alt="Screenshot From 2026-05-23 21-55-51" src="https://github.com/user-attachments/assets/fa84ecb5-79c3-487b-bf48-202eb8342946" />
+
+<img width="1920" height="929" alt="Screenshot From 2026-05-23 21-55-23" src="https://github.com/user-attachments/assets/8bade423-fbb6-4d95-8ced-b905464ade95" />
+
+<img width="1920" height="929" alt="Screenshot From 2026-05-23 21-55-10" src="https://github.com/user-attachments/assets/527e0c1d-c352-4d48-ae36-b92202bab327" />
+
+<img width="1920" height="929" alt="Screenshot From 2026-05-23 21-54-22" src="https://github.com/user-attachments/assets/84b4f243-a4d7-4693-bf99-b0dab8c4aa35" />
+
+<img width="1920" height="929" alt="Screenshot From 2026-05-23 21-53-36" src="https://github.com/user-attachments/assets/e02cc768-19cf-4c75-9987-2f61476bffe6" />
+
+<img width="1920" height="929" alt="Screenshot From 2026-05-23 21-53-22" src="https://github.com/user-attachments/assets/f397b909-d0ee-4053-9257-fa1642a94e1d" />
+
+<img width="1920" height="929" alt="Screenshot From 2026-05-23 21-51-37" src="https://github.com/user-attachments/assets/e29cf3ef-dd71-42c6-acfa-aca10f361ed6" />
+
+<img width="1920" height="929" alt="Screenshot From 2026-05-23 21-51-29" src="https://github.com/user-attachments/assets/5a8a1dd9-fe58-4d74-bd89-f790b3ceabc0" />
+
+<img width="1920" height="929" alt="Screenshot From 2026-05-23 21-51-07" src="https://github.com/user-attachments/assets/4103cce5-4097-4577-af0a-b725b05d0222" />
+
+
+## 👨‍💻 Author
+
+**Sirophin**
+Cyber Security Student
+
+
